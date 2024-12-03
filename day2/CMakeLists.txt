@@ -4,11 +4,9 @@ project(aoc2 VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 26)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Erstelle beide Executables
-add_executable(part1 part1.cc)
-add_executable(part2 part2.cc)
+add_executable(day2-part1 day2-part1.cc)
+add_executable(day2-part2 day2-part2.cc)
 
-# Compiler-Flags für beide Executables
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
     target_compile_options(part1 PRIVATE -Wall -Wextra -Wpedantic -O3)
     target_compile_options(part2 PRIVATE -Wall -Wextra -Wpedantic -O3)

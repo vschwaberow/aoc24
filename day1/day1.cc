@@ -1,3 +1,21 @@
+/**
+ * @file day1.cc
+ * @brief Calculate total distance and similarity score between two lists.
+ *
+ * This program reads two lists of integers from a file named "lists.txt".
+ * Each line in the file contains two integers, one for each list. The program
+ * calculates the total distance between the lists by pairing the smallest
+ * elements from each list and summing the absolute differences. It also
+ * calculates a similarity score by counting occurrences of elements in the
+ * second list and summing the products of elements from the first list with
+ * their counts in the second list.
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * @author Volker Schwaberow <volker@schwaberow.de>
+ * @date 02.12.2024
+ */
+
 #include <algorithm>
 #include <iostream>
 #include <fstream>

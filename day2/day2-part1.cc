@@ -1,33 +1,56 @@
+/**
+ * @file day2-part1.cc
+ * @brief Safety check for level sequences in a list.
+ *
+ * This program reads a list of level sequences from a file named "list.txt".
+ * Each line in the file represents a sequence of integer levels. The program
+ * checks if each sequence is gradual, meaning the levels either consistently
+ * increase or decrease with differences between 1 and 3. The check is performed
+ * concurrently for each line to improve performance. The program outputs the
+ * number of sequences that are considered safe.
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * @author Volker Schwaberow <volker@schwaberow.de>
+ * @date 02.12.2024
+ */
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <execution> // For parallel algorithms
-#include <future>    // For concurrent tasks
-#include <numeric>   // For accumulate
+#include <execution>
+#include <future>
+#include <numeric>
 
 // Helper function to check if levels are gradually increasing or decreasing
-bool isGradual(const std::vector<int>& levels) {
-    if (levels.size() < 2) return true;
-    
+bool isGradual(const std::vector<int> &levels)
+{
+    if (levels.size() < 2)
+        return true;
+
     // Check first difference to determine direction
     bool increasing = levels[1] > levels[0];
-    
-    for (size_t i = 1; i < levels.size(); i++) {
-        int diff = levels[i] - levels[i-1];
-        
+
+    for (size_t i = 1; i < levels.size(); i++)
+    {
+        int diff = levels[i] - levels[i - 1];
+
         // Check if difference is between 1 and 3
-        if (std::abs(diff) < 1 || std::abs(diff) > 3) {
+        if (std::abs(diff) < 1 || std::abs(diff) > 3)
+        {
             return false;
         }
-        
+
         // Check if direction matches initial direction
-        if (increasing && diff < 0) return false;
-        if (!increasing && diff > 0) return false;
+        if (increasing && diff < 0)
+            return false;
+        if (!increasing && diff > 0)
+            return false;
     }
-    
+
     return true;
 }
 

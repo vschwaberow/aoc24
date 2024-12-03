@@ -1,3 +1,24 @@
+/**
+ * @file day2-part2.cc
+ * @brief Implementation of safety check for level sequences with dampener.
+ *
+ * File contains the impl. of functions to check if a sequence of levels
+ * is gradual or gradual by removing one level. It reads sequences from an
+ * input file, asynchronously, and counts how many sequences are safe
+ * with a dampener.
+ *
+ * The main functionalities include:
+ * - Checking if a sequence of levels is gradual.
+ * - Checking if a sequence can be made gradual by removing one level.
+ * - Reading sequences from an input file and processing them asynchronously.
+ * - Counting and outputting the number of safe sequences.
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * @author Volker Schwaberow
+ * @date 02.12.2024
+ */
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -101,7 +122,7 @@ int main()
 
     // Vector to store futures for asynchronous processing of lines
     std::vector<std::future<bool>> futures;
-    
+
     // Launch asynchronous tasks for each line in the input
     for (const auto &l : lines)
     {
