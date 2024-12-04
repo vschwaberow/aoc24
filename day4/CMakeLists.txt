@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 26)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_executable(day4-part1 day4-part1.cc)
-add_executable(day4-part2 day3-part2.cc)
+add_executable(day4-part2 day4-part2.cc)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
     target_compile_options(day4-part1 PRIVATE -Wall -Wextra -Wpedantic -O3)
