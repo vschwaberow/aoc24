@@ -4,6 +4,7 @@
  *
  * SPDX-License-Identifier: MIT
  *
+ * @author Volker Schwaberow <volker@schwaberow.de>
  * @date 05.12.2024
  */
 

@@ -1,13 +1,14 @@
 /**
  * @file day5-part2.cc
  * @brief Solution for Advent of Code 2024 Day 5 Part 2
- * 
+ *
  * I am using Kahn's algorithm to perform topological sorting. Maybe
  * I could use a different algorithm to improve performance. But
  * Kahn's algorithm is simple (!!!) and works well for this problem.
  *
  * SPDX-License-Identifier: MIT
  *
+ * @author Volker Schwaberow <volker@schwaberow.de>
  * @date 05.12.2024
  */
 
