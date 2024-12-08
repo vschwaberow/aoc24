@@ -1,6 +1,6 @@
 /**
  * @file day8-part1.cc
- * @brief Solution for Advent of Code 2024 Day 8 Part 2
+ * @brief Solution for Advent of Code 2024 Day 8 Part 1
  *
  * SPDX-License-Identifier: MIT
  *
