@@ -1,18 +1,7 @@
 # 🎄 Advent of Code 2024 C++ Solutions
 
 ## Overview
-Solutions for Advent of Code 2024 challenges implemented in Modern C++. Currently solving:
-- Day 1: Calibration Values Parser
-- Day 2: Nuclear Reindeer Reactor Safety System
-- Day 3: Snowflake Pattern Recognition
-- Day 4: Elven Accounting Ledger
-- Day 5: Santa's Sleigh Balancing Algorithm
-- Day 6: Gift Wrapping Optimization
-- Day 7: Reindeer Route Planning
-- Day 8: Toy Manufacturing Quality Control
-- Day 9: North Pole Weather Simulation
-- Day 10: Christmas Light Synchronization
-- Day 11: Cookie Recipe Analyzer
+Solutions for Advent of Code 2024 challenges implemented in Modern C++. 
 
 ## Build Requirements
 - CMake 3.26+
